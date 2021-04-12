@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" href="./css/flickity.min.css">
+  <link rel="stylesheet" href="./css/flickity-fade.css">
+  <link rel="stylesheet" href="./css/fullpage.min.css">
+  <link rel="stylesheet" href="./css/codepen-embed.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/style.min.css">
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="./css/theme-brown.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./image/logo/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="./image/logo/favicon-64x64.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./image/logo/favicon-16x16.png">
+  <title>Herbert | Portfolio</title>
+</head>
+<script src="./js/app.js"></script>
+
+<body>
+  <nav class="navbar navbar-expand-xl navbar-dark  navbar-togglable  fixed-top">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">
+
+        <!-- Brand -->
+        <svg class="navbar-brand-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="320" height="320" viewBox="0 0 320 320">
+          <title>Logo</title>
+          <g fill="currentColor">
+            <polygon points="0 150 10 140 60 190 60 170 20 130 30 120 60 150 60 90 70 80 70 220 0 150" />
+            <polygon points="80 230 80 190 130 140 130 160 110 180 110 260 100 250 100 190 90 200 90 240 80 230" />
+            <polygon
+              points="80 170 90 160 90 120 100 110 100 150 130 120 130 100 110 120 110 80 90 100 90 80 130 40 130 20 80 70 80 170" />
+            <polygon points="150 185 150 80 140 90 140 250 140 290 150 300 150 195 155 190 150 185" />
+            <polygon points="50 100 40 110 50 120 50 100" />
+            <polygon points="120 190 130 180 130 280 120 270 120 190" />
+            <polygon points="120 90 120 70 140 50 140 10 150 0 150 60 120 90" />
+            <polygon points="160 164 155 172 155 182 160 190 165 182 165 172 160 164" />
+          </g>
+          <g fill="currentColor" class="navbar-brand-svg-i">
+            <polygon points="240 190 240 210 200 170 200 190 240 230 230 240 200 210 200 270 190 280 190 140 240 190" />
+            <polygon points="320 150 310 140 260 190 260 170 300 130 290 120 260 150 260 90 250 80 250 220 320 150" />
+            <polygon
+              points="240 170 230 160 230 120 220 110 220 150 190 120 190 100 210 120 210 80 230 100 230 80 190 40 190 20 240 70 240 170" />
+            <polygon points="170 80 170 185 165 190 170 195 170 260 170 260 170 300 180 290 180 250 180 90 170 80" />
+            <polygon points="220 250 210 240 210 260 220 250" />
+            <polygon points="280 110 270 120 270 100 280 110" />
+            <polygon points="200 90 200 70 180 50 180 10 170 0 170 60 200 90" />
+          </g>
+        </svg>
+        <text class="navbar-brand-text">Herbert.</text>
+      </a>
+  </nav>
+  <section class="section section-top section-full">
+
+    <!-- Cover -->
+    <div class="bg-cover" style="background-image: url(./image/IMG_3376.png);"></div>
+
+    <!-- Overlay -->
+    <div class="bg-overlay"></div>
+
+    <!-- Triangles -->
+    <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
+    <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
+
+    <!-- Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-lg-5 align-self-end">
+
+          <!-- Preheading -->
+          <p class="font-weight-medium text-xs text-uppercase text-white text-muted animate" data-toggle="animation"
+            data-animation="fadeUp" data-animation-order="0" data-animation-trigger="load">
+            by Herbert
+          </p>
+
+          <!-- Heading -->
+          <h1 class="text-white mb-4 animate" data-toggle="animation" data-animation="fadeUp" data-animation-order="1"
+            data-animation-trigger="load">
+            USE STORIES TO CONVEY INFORMATION.
+          </h1>
+
+          <!-- Subheading -->
+          <p class="text-white text-muted mb-5 mb-md-0 animate" data-toggle="animation" data-animation="fadeUp"
+            data-animation-order="2" data-animation-trigger="load">
+            注重細節，追求完美，只為製作出最好的作品
+          </p>
+
+        </div>
+        <div class="col-md-4 col-lg-7 align-self-center d-flex justify-content-end">
+
+          <!-- Heading -->
+          <h4 class="text-vertical text-white mb-0">
+            <span>HERBERT | PORTFOLIO</span>
+          </h4>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+
+    <!-- MODALS    ================================================== -->
+    <!-- Video_1 -->
+    <div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-video-header"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-video modal-xl" role="document">
+        <div class="modal-content">
+          <!-- Header -->
+          <div class="modal-header">
+            <!-- Title -->
+            <h4 class="modal-title text-white" id="modal-video-header">
+              HERBERT | HERTS STUDIO
+            </h4>
+            <!-- Close -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Video -->
+            <!-- <video src="./video/HertsStudio.mp4" class="img-fluid" controls=""></video> -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe id="VideoWorks" width="100%" height="1080" src="https://www.youtube.com/embed/Ye01s4Ft73k"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div> <!-- / .modal-content -->
+      </div> <!-- / .modal-dialog -->
+    </div>
+    <!-- Video_2 -->
+    <div class="modal fade" id="modal-video_2" tabindex="-1" role="dialog" aria-labelledby="modal-video-header"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-video modal-xl" role="document">
+        <div class="modal-content">
+          <!-- Header -->
+          <div class="modal-header">
+            <!-- Title -->
+            <h4 class="modal-title text-white" id="modal-video-header">
+              MATSU IN TAIWAN
+            </h4>
+            <!-- Close -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Video -->
+            <!-- <video src="./video/Matsu In Taiwan.mp4" class="img-fluid" controls=""></video> -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe id="VideoWorks" width="100%" height="1080" src="https://www.youtube.com/embed/QU8NFTbQBGA"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div> <!-- / .modal-content -->
+      </div> <!-- / .modal-dialog -->
+    </div>
+    <!-- Video_3 -->
+    <div class="modal fade" id="modal-video_3" tabindex="-1" role="dialog" aria-labelledby="modal-video-header"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-video modal-xl" role="document">
+        <div class="modal-content">
+          <!-- Header -->
+          <div class="modal-header">
+            <!-- Title -->
+            <h4 class="modal-title text-white" id="modal-video-header">
+              S O U L
+            </h4>
+            <!-- Close -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Video -->
+            <!-- <video src="./video/S.O.U.L.mp4" class="img-fluid" controls=""></video> -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe id="VideoWorks" width="100%" height="1080" src="https://www.youtube.com/embed/bCRjzguROJQ"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div> <!-- / .modal-content -->
+      </div> <!-- / .modal-dialog -->
+    </div>
+    <!-- Video_4 -->
+    <div class="modal fade" id="modal-video_4" tabindex="-1" role="dialog" aria-labelledby="modal-video-header"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-video modal-xl" role="document">
+        <div class="modal-content">
+          <!-- Header -->
+          <div class="modal-header">
+            <!-- Title -->
+            <h4 class="modal-title text-white" id="modal-video-header">
+              GIRL'S FRONTLINE | WE ARE
+            </h4>
+            <!-- Close -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Video -->
+            <!-- <video src="./video/We_Are.mp4" class="img-fluid" controls=""></video> -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe id="VideoWorks" width="100%" height="1080" src="https://www.youtube.com/embed/GKJPFYZXDlo"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div> <!-- / .modal-content -->
+      </div> <!-- / .modal-dialog -->
+    </div>
+    <!-- Video_5 -->
+    <div class="modal fade" id="modal-video_5" tabindex="-1" role="dialog" aria-labelledby="modal-video-header"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-video modal-xl" role="document">
+        <div class="modal-content">
+          <!-- Header -->
+          <div class="modal-header">
+            <!-- Title -->
+            <h4 class="modal-title text-white" id="modal-video-header">
+              VALORANT | WELCOME TO VALORANT
+            </h4>
+            <!-- Close -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Video -->
+            <!-- <video src="./video/welcome to Valorant.mp4" class="img-fluid" controls=""></video> -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe id="VideoWorks" width="100%" height="1080" src="https://www.youtube.com/embed/GIAk7GiFhPE"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div> <!-- / .modal-content -->
+      </div> <!-- / .modal-dialog -->
+    </div>
+  </section>
+
+  <!-- light video1 -->
+  <section class="section bg-light ">
+    <div class="bg-triangle bg-triangle-dark bg-triangle-top bg-triangle-left"></div>
+    <div class="bg-triangle bg-triangle-dark bg-triangle-bottom bg-triangle-right"></div>
+
+    <div class="model">
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-12">
+
+            <div class="row">
+              <div class="col-md-1 d-flex align-self-center d-flex justify-content-end">
+
+                <!-- Category -->
+                <div class="model-cat mb-4 mb-md-0">
+                  <h4 class="text-vertical">
+                    <span class="model-cat-title text-zigzag fade show">
+                      BRAND VIDEO
+                    </span>
+                  </h4>
+                </div>
+
+              </div>
+              <div class="col-md-6">
+
+                <!-- Image -->
+                <div class="model-img mb-5 mb-md-0">
+
+                  <!-- Image -->
+                  <img src="./image/video/HertsStudio.png" class="model-img-src img-fluid fade show" alt="...">
+
+                </div> <!-- / .model-img -->
+
+              </div>
+              <div class="col-md-5">
+
+                <!-- Heading -->
+                <h3 class="model-heading mb-4 fade show">
+                  HERTS STUDIO | 個人形象短片
+                </h3>
+
+                <!-- Content -->
+                <div class="model-content mb-5 mb-md-0 fade show">
+
+                  <!-- Blockquote -->
+                  <blockquote class="blockquote">
+                    <p class="mb-0">
+                      Taking the starry sky as the idea, the outline of the LOGO is displayed through the movement
+                      trajectory of the light spot.<br>
+                      Use the movement of the light spot to transform the form of the LOGO, and finally present a
+                      personal brand.
+                    </p>
+                  </blockquote>
+
+                  <!-- Content -->
+                  <p>
+                    　以星空為發想，透過光點移動的痕跡呈現個人LOGO的輪廓，<br>
+                    利用光點的移動來變換LOGO的形式，最後呈現出個人的形象。
+                  </p>
+
+                  <!-- Button -->
+                  <a href="#modal-video" data-toggle="modal" class="btn btn-outline-primary btn-circle mr-3">
+                    <!-- <i class="fas fa-play"></i> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-play-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                    </svg>
+                  </a> Play video
+
+                </div> <!-- / .model-content -->
+
+              </div>
+            </div> <!-- / .row -->
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Video2 -->
+  <section class="section">
+
+    <div class="model">
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-12">
+
+            <div class="row">
+              <div class="col-md-5">
+
+                <!-- Heading -->
+                <h3 class="model-heading mb-4 fade show">
+                  MATSU IN TAIWAN | 畢業製作形象短片
+                </h3>
+
+                <!-- Content -->
+                <div class="model-content mb-5 mb-md-0 fade show">
+
+                  <!-- Blockquote -->
+                  <blockquote class="blockquote">
+                    <p class="mb-0">
+                      We will introduce a visual story of vitality by the one-page website and multimedia animation.<br>
+
+                      We will lead you to understand the difference between Eastern and Western myths, and at the same
+                      time understand the importance of faith to Taiwanese people.<br>
+
+                      Let Taiwan's unique "faith culture" enter your heart.
+                    </p>
+                  </blockquote>
+
+                  <!-- Content -->
+                  <p>
+                    　　透過一頁式網頁以及多媒體動畫，呈現出生動的視覺故事，<br>
+                    讓外國旅客了解東西方神話異同，明白信仰對臺灣人的重要性，<br>
+                    讓臺灣獨有的「信仰文化」進入外國旅客心中。
+                  </p>
+
+                  <!-- Button -->
+                  <a href="#modal-video_2" data-toggle="modal" class="btn btn-outline-primary btn-circle mr-3">
+                    <!-- <i class="fas fa-play"></i> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-play-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                    </svg>
+                  </a> Play video
+
+                </div> <!-- / .model-content -->
+
+              </div>
+
+              <div class="col-md-6">
+
+                <!-- Image -->
+                <div class="model-img mb-5 mb-md-0">
+
+                  <!-- Image -->
+                  <img src="./image/video/Matsu In Taiwan.png" class="model-img-src img-fluid fade show" alt="...">
+
+                </div> <!-- / .model-img -->
+
+              </div>
+              <div class="col-md-1 d-flex align-self-center d-flex justify-content-end">
+
+                <!-- Category -->
+                <div class="model-cat mb-4 mb-md-0">
+                  <h4 class="text-vertical">
+                    <span class="model-cat-title text-zigzag fade show">
+                      BRAND VIDEO
+                    </span>
+                  </h4>
+                </div>
+
+              </div>
+            </div> <!-- / .row -->
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- dark video3 -->
+  <section class="section bg-dark  ">
+    <div class="bg-triangle bg-triangle-light bg-triangle-top bg-triangle-right"></div>
+    <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
+
+    <div class="model">
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-12">
+
+            <div class="row">
+              <div class="col-md-1 d-flex align-self-center d-flex justify-content-end">
+
+                <!-- Category -->
+                <div class="model-cat mb-4 mb-md-0">
+                  <h4 class="text-vertical">
+                    <span class="model-cat-title text-zigzag fade show text-white">
+                      BRAND VIDEO
+                    </span>
+                  </h4>
+                </div>
+
+              </div>
+              <div class="col-md-6">
+
+                <!-- Image -->
+                <div class="model-img mb-5 mb-md-0">
+
+                  <!-- Image -->
+                  <img src="./image/video/SOUL.png" class="model-img-src img-fluid fade show" alt="...">
+
+                </div> <!-- / .model-img -->
+
+              </div>
+              <div class="col-md-5">
+
+                <!-- Heading -->
+                <h3 class="model-heading mb-4 fade show text-white">
+                  S O U L | 品牌形象短片
+                </h3>
+
+                <!-- Content -->
+                <div class="model-content mb-5 mb-md-0 fade show text-white">
+
+                  <!-- Blockquote -->
+                  <blockquote class="blockquote">
+                    <p class="mb-0 ">
+                      Soul pronounced similarly to “lock” in Chinese mandarin, signifies spirit.<br>
+                      Design is the soul of a product, implying that beautiful things are all cherished within.
+                    </p>
+                  </blockquote>
+
+                  <!-- Content -->
+                  <p>
+                    SOUL，讀音相似中文「鎖」，其所代表的意義是指「靈魂」。<br>
+                    設計是產品的靈魂，暗示著所有美麗的事物都被珍惜。
+                  </p>
+
+                  <!-- Button -->
+                  <a href="#modal-video_3" data-toggle="modal" class="btn btn-outline-primary btn-circle mr-3 b ">
+                    <!-- <i class="fas fa-play"></i> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor "
+                      class="bi bi-dark bi-play-fill " viewBox="0 0 16 16">
+                      <path
+                        d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                    </svg>
+                  </a> Play video
+
+                </div> <!-- / .model-content -->
+
+              </div>
+            </div> <!-- / .row -->
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Video4 -->
+  <section class="section">
+
+    <div class="model">
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-12">
+
+            <div class="row">
+              <div class="col-md-5">
+
+                <!-- Heading -->
+                <h3 class="model-heading mb-4 fade show">
+                  GIRL'S FRONTLINE | 遊戲剪輯作品
+                </h3>
+
+                <!-- Content -->
+                <div class="model-content mb-5 mb-md-0 fade show">
+
+                  <!-- Blockquote -->
+                  <blockquote class="blockquote">
+                    <p class="mb-0">
+                      Taking the starry sky as the idea, the outline of the LOGO is displayed through the movement
+                      trajectory of the light spot.<br>
+                      Use the movement of the light spot to transform the form of the LOGO, and finally present a
+                      personal brand.
+                    </p>
+                  </blockquote>
+
+                  <!-- Content -->
+                  <p>
+                    　　影片主要在講述遊戲中，軍方反叛之後的這個時間點，<br>
+                    身為玩家的指揮官與人形們的心境變化以及這其中的故事。<br>
+                    影片透過遊戲中玩家與角色M4A1的視角來敘述遊戲中的劇情。
+                  </p>
+
+                  <!-- Button -->
+                  <a href="#modal-video_4" data-toggle="modal" class="btn btn-outline-primary btn-circle mr-3">
+                    <!-- <i class="fas fa-play"></i> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-play-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                    </svg>
+                  </a> Play video
+
+                </div> <!-- / .model-content -->
+
+              </div>
+
+              <div class="col-md-6">
+
+                <!-- Image -->
+                <div class="model-img mb-5 mb-md-0">
+
+                  <!-- Image -->
+                  <img src="./image/video/We_Are.png" class="model-img-src img-fluid fade show" alt="...">
+
+                </div> <!-- / .model-img -->
+
+              </div>
+              <div class="col-md-1 d-flex align-self-center d-flex justify-content-end">
+
+                <!-- Category -->
+                <div class="model-cat mb-4 mb-md-0">
+                  <h4 class="text-vertical">
+                    <span class="model-cat-title text-zigzag fade show">
+                      GAME EDIT VIDEO
+                    </span>
+                  </h4>
+                </div>
+
+              </div>
+            </div> <!-- / .row -->
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- light video5 -->
+  <section class="section bg-light ">
+    <div class="bg-triangle bg-triangle-dark bg-triangle-top bg-triangle-left"></div>
+    <div class="bg-triangle bg-triangle-dark bg-triangle-bottom bg-triangle-right"></div>
+
+    <div class="model">
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-12">
+
+            <div class="row">
+              <div class="col-md-1 d-flex align-self-center d-flex justify-content-end">
+
+                <!-- Category -->
+                <div class="model-cat mb-4 mb-md-0">
+                  <h4 class="text-vertical">
+                    <span class="model-cat-title text-zigzag fade show">
+                      GAME EDIT VIDEO
+                    </span>
+                  </h4>
+                </div>
+
+              </div>
+              <div class="col-md-6">
+
+                <!-- Image -->
+                <div class="model-img mb-5 mb-md-0">
+
+                  <!-- Image -->
+                  <img src="./image/video/Welcome to Valorant.png" class="model-img-src img-fluid fade show" alt="...">
+
+                </div> <!-- / .model-img -->
+
+              </div>
+              <div class="col-md-5">
+
+                <!-- Heading -->
+                <h3 class="model-heading mb-4 fade show">
+                  VALORANT | 遊戲剪輯作品
+                </h3>
+
+                <!-- Content -->
+                <div class="model-content mb-5 mb-md-0 fade show">
+
+                  <!-- Blockquote -->
+                  <blockquote class="blockquote">
+                    <p class="mb-0">
+                      The film mainly tells the process of the characters in the game accepting tasks and completing
+                      tasks.<br>
+                      The film is based on music and mixes game PV and highlight.
+                    </p>
+                  </blockquote>
+
+                  <!-- Content -->
+                  <p>
+                    　　影片主要講述遊戲中的角色接收任務並完成任務的過程。<br>
+                    影片配合音樂的節奏穿插使用遊戲宣傳片與遊戲精華來呈現。
+                  </p>
+
+                  <!-- Button -->
+                  <a href="#modal-video_5" data-toggle="modal" class="btn btn-outline-primary btn-circle mr-3">
+                    <!-- <i class="fas fa-play"></i> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-play-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                    </svg>
+                  </a> Play video
+
+                </div> <!-- / .model-content -->
+
+              </div>
+            </div> <!-- / .row -->
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="section bg-dark">
+
+    <!-- Triangles -->
+    <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
+    <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
+
+    <!--Content -->
+    <div class="container">
+      <div class="row align-self-center">
+        <div class="col-md-auto">
+
+          <!-- Brand -->
+          <p>
+            <a href="#" class="footer-brand text-white">
+
+              <!-- Brand -->
+              <svg class="navbar-brand-svg" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="320" height="320" viewBox="0 0 320 320">
+                <title>Logo</title>
+                <g fill="currentColor">
+                  <polygon points="0 150 10 140 60 190 60 170 20 130 30 120 60 150 60 90 70 80 70 220 0 150" />
+                  <polygon
+                    points="80 230 80 190 130 140 130 160 110 180 110 260 100 250 100 190 90 200 90 240 80 230" />
+                  <polygon
+                    points="80 170 90 160 90 120 100 110 100 150 130 120 130 100 110 120 110 80 90 100 90 80 130 40 130 20 80 70 80 170" />
+                  <polygon points="150 185 150 80 140 90 140 250 140 290 150 300 150 195 155 190 150 185" />
+                  <polygon points="50 100 40 110 50 120 50 100" />
+                  <polygon points="120 190 130 180 130 280 120 270 120 190" />
+                  <polygon points="120 90 120 70 140 50 140 10 150 0 150 60 120 90" />
+                  <polygon points="160 164 155 172 155 182 160 190 165 182 165 172 160 164" />
+                </g>
+                <g fill="currentColor" class="text-primary">
+                  <polygon
+                    points="240 190 240 210 200 170 200 190 240 230 230 240 200 210 200 270 190 280 190 140 240 190" />
+                  <polygon
+                    points="320 150 310 140 260 190 260 170 300 130 290 120 260 150 260 90 250 80 250 220 320 150" />
+                  <polygon
+                    points="240 170 230 160 230 120 220 110 220 150 190 120 190 100 210 120 210 80 230 100 230 80 190 40 190 20 240 70 240 170" />
+                  <polygon
+                    points="170 80 170 185 165 190 170 195 170 260 170 260 170 300 180 290 180 250 180 90 170 80" />
+                  <polygon points="220 250 210 240 210 260 220 250" />
+                  <polygon points="280 110 270 120 270 100 280 110" />
+                  <polygon points="200 90 200 70 180 50 180 10 170 0 170 60 200 90" />
+                </g>
+              </svg>
+              <text class="navbar-brand-text">Herbert.</text>
+            </a>
+          </p>
+
+        </div>
+        <div class="col-md">
+
+          <!-- Links -->
+          <ul class="list-unstyled list-inline text-md-right">
+            <li class="list-inline-item mr-2">
+              <a href="#" class="text-white">
+                Terms and conditions
+              </a>
+            </li>
+            <li class="list-inline-item mr-2">
+              <a href="#" class="text-white">
+                Privacy policy
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-white">
+                Contact us
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div> <!-- / .row -->
+      <div class="row align-items-center">
+        <div class="col-md">
+
+          <!-- Copyright -->
+          <p class="text-white text-muted">
+            <small>
+              © Copyright <span class="current-year"> </span> Herbert | Portfolio. All rights reserved.
+            </small>
+          </p>
+
+        </div>
+        <div class="col-md">
+
+          <!-- Social links -->
+          <!-- <ul class="list-inline list-unstyled text-md-right">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li class="list-inline-item ml-3">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item ml-3">
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul> -->
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </footer>
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  <!-- Global JS -->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/js.js"></script>
+
+  <!-- Plugins JS -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/flickity.pkgd.min.js"></script>
+  <script src="./js/flickity-fade.js"></script>
+  <script src="./js/parallax.min.js"></script>
+  <script src="./js/jquery.waypoints.min.js"></script>
+  <script src="./js/inview.min.js"></script>
+  <script src="./js/scrolloverflow.min.js"></script>
+  <script src="./js/fullpage.min.js"></script>
+  <script src="./js/highlight.pack.min.js"></script>
+  <!-- Theme JS -->
+  <script src="./js/theme.min.js"></script>
+
+</body>
+
+</html>
