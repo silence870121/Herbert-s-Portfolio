@@ -1,0 +1,689 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* img reset css */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+/** color plan */
+:root {
+    --primary: hsl(30, 50%, 25%);
+    --primary-variant: hsl(30, 50%, 35%);
+    --secondary: hsl(30, 25%, 50%);
+    --secondary-variant: hsl(30, 25%, 60%);
+
+    --on-primary: hsl(0, 0%, 100%);
+    --background: hsl(0, 0%, 95%);
+    --surface: hsl(0, 0%, 85%);
+}
+
+/** Responsive Web Design */
+.container {
+    width: 100%;
+    margin: auto;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/*? Base width from 375px */
+
+/** start index css */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--primary);
+    background-color: var(--background);
+}
+
+header {
+    width: 100%;
+    background-image: linear-gradient(to right bottom, hsla(0, 0%, 95%, 0.75), hsla(0, 0%, 95%, 0.75)), url(../image/KEY_VISION.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
+header .container {
+    height: 90vh;
+    align-items: center;
+}
+
+.header-body {
+    width: calc(100%/12*7);
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+}
+
+.header-body h1 {
+    width: 100%;
+    font-size: 4rem;
+    white-space: nowrap;
+    margin-left: 0.25rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.header-body h1 span {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.header-body p {
+    width: 100%;
+    font-size: 8rem;
+    font-weight: lighter;
+}
+
+.profession {
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+}
+
+.profession::before {
+    flex: 1;
+    content: "";
+    height: 2px;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    background-color: var(--primary);
+}
+
+/*? ---------- ---------- main part ---------- ---------- */
+/*? ---------- ---------- main part ---------- ---------- */
+main h2, .footer h2 {
+    width: 100%;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+section {
+    /* border: 1px dashed var(--secondary); */
+    padding-bottom: 7.5rem;
+}
+
+.about, .skill, .experience, .project, .autobiography, .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    /* border: 1px dashed var(--primary); */
+}
+
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.bg-secondary {
+    background-color: var(--secondary);
+}
+
+.bg-background {
+    background-color: var(--background);
+}
+
+.bg-surface {
+    background-color: var(--surface);
+}
+
+/* ? ---------- about part ---------- */
+.about {
+    padding-top: 7.5rem;
+}
+
+.about h2 {
+    text-align: left;
+    padding: 0;
+}
+
+.about-body {
+    width: calc(100%/12*6);
+    /* height: 100%; */
+}
+
+.headshot {
+    width: 50vw;
+    height: 50vw;
+    max-width: 25rem;
+    max-height: 25rem;
+    background-image: url(../image/headshot\ .png);
+    background-size: cover;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.headshot::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--primary);
+    position: absolute;
+    margin-top: -3rem;
+    margin-left: 3rem;
+    z-index: -1;
+}
+
+.about-body p {
+    margin-top: 0.5rem;
+    line-height: 1.5rem;
+}
+
+.about-info {
+    margin-top: 3rem;
+}
+
+.about-info li {
+    font-size: 1.25rem;
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+
+}
+
+.about-info li span {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 1rem;
+}
+
+.about-contact {
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.about-contact ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-contact li {
+    /* font-size: 1.5rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.about-contact img {
+    padding-right: 1rem;
+}
+
+/* ? ---------- about part end ---------- */
+/* ? ---------- skill part ---------- */
+
+
+.skill-list {
+    width: calc(100%/12*6 - 2.5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.skill-list li {
+    width: 100%;
+    min-height: 2rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skill-list li h3 {
+    /* width: 100%; */
+    font-size: 2rem;
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.skill-list li span {
+    right: 20%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary);
+    text-align: center;
+    border: 2px solid var(--secondary);
+    border-radius: 1.5rem;
+    margin: 0 0.5rem;
+    padding: 0 0.5rem;
+}
+
+.skill-list li p {
+    padding: 0 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    min-height: 1rem;
+    color: var(--primary-variant);
+}
+
+.skill-progress {
+    width: 100%;
+    height: 4px;
+    position: relative;
+    background-color: var(--secondary-variant);
+    display: flex;
+}
+
+.skill-progress::before {
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: var(--primary-variant);
+    /* border-right: 4px solid var(--surface); */
+}
+
+.skill-progress-0::before {
+    right: 100%;
+    border-right: 4px solid var(--surface);
+}
+
+.skill-progress-1::before {
+    right: 80%;
+    border-right: 4px solid var(--surface);
+}
+
+.skill-progress-2::before {
+    right: 60%;
+    border-right: 4px solid var(--surface);
+}
+
+.skill-progress-3::before {
+    right: 40%;
+    border-right: 4px solid var(--surface);
+}
+
+.skill-progress-4::before {
+    right: 20%;
+    border-right: 4px solid var(--surface);
+}
+
+.skill-note {
+    width: calc(100%/12*4);
+    background-color: var(--surface);
+    color: var(--primary);
+    padding: 1rem 3rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.skill-note-center {
+    margin-top: 3rem;
+    color: var(--on-primary);
+    background-color: var(--primary);
+}
+
+.skill-note h3 {
+    /* width: 100%; */
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--secondary-variant);
+    padding-bottom: 0.25rem;
+}
+
+.skill-note ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.skill-note li {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+/* ? ---------- skill part end ---------- */
+/* ? ---------- experience part ---------- */
+.experience {
+    justify-content: center;
+}
+
+.experience-item {
+    /* border: 1px dashed var(--secondary-variant); */
+
+    width: calc(100%/12*10);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-left: 3px solid var(--primary-variant);
+    padding-left: 0.5rem;
+    margin-bottom: 2rem;
+    transition: all 200ms ease;
+}
+
+.experience-time {
+    padding: 0.5rem;
+    text-transform: uppercase;
+    background-color: var(--primary);
+    color: var(--on-primary);
+    margin-bottom: 0.5rem;
+    transition: all 200ms ease;
+}
+
+.experience-item h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.experience-item h3 span {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--primary-variant);
+    padding: 0 0.5rem;
+}
+
+.experience-item:hover .experience-time {
+    background-color: var(--secondary);
+    color: var(--on-primary);
+}
+
+.experience-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.experience-part>* {
+    width: 100%;
+}
+
+.experience-detail {
+    text-indent: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.experience-part span {
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+}
+
+.experience-tags {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.experience-tags span {
+
+    padding: 0.1rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--primary-variant);
+    border: 2px solid var(--primary-variant);
+    margin: 0.25rem;
+    margin-bottom: 0;
+}
+
+/* ? ---------- experience part end ---------- */
+/* ? ---------- project part  ---------- */
+.project ul {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.project li {
+    width: calc(100%/3);
+    padding: 0.5rem;
+    position: relative;
+}
+
+.project li a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(30, 25%, 75%, 0.75);
+    color: var(--primary);
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: all 400ms ease;
+}
+
+.project li a:hover {
+    opacity: 0;
+}
+
+.project li a>* {
+    width: 100%;
+    /* border: 1px dashed var(--on-primary); */
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.project h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.project svg {
+    color: var(--primary);
+    width: 1rem;
+    height: 1rem;
+
+}
+
+/* ? ---------- project part end ---------- */
+/* ? ---------- autobiography part ---------- */
+
+.autobiography {
+    justify-content: center;
+
+}
+
+.autobiography input {
+    display: none;
+}
+
+.autobiography label {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.autobiography-hide {
+    display: none;
+}
+
+.autobiography input:checked~.autobiography-show {
+    display: none;
+}
+
+.autobiography input:checked~.autobiography-hide {
+    display: block;
+}
+
+.autobiography-body {
+    position: relative;
+    /* border: 1px dashed var(--on-primary); */
+    width: calc(100%/12*10);
+    max-height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: all 500ms ease;
+    padding-bottom: 2.5rem;
+}
+
+.autobiography-body::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0) 50%, var(--surface));
+    transition: all 500ms ease;
+    opacity: 1;
+}
+
+.autobiography-body>* {
+    width: 100%;
+}
+
+.autobiography-body h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.autobiography-body p, .autobiography-body span {
+    text-indent: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.autobiography-body span {
+    color: var(--secondary);
+    margin-bottom: 0.25rem;
+}
+
+.autobiography input:checked~.autobiography-body {
+    max-height: 75rem;
+}
+
+.autobiography input:checked~.autobiography-body::before {
+    opacity: 0;
+}
+
+/* ? ---------- autobiography part end ---------- */
+
+/*? ---------- ---------- main part end ---------- ---------- */
+/*? ---------- ---------- main part end ---------- ---------- */
+.footer-contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-contact li {
+    width: calc(100%/4);
+    border: 1px dashed var(--on-primary);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.footer-contact li a {
+    display: block;
+}
+
+
+
+
+
+/** Responsive Web Design */
+/*? mobile first */
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .container {
+        max-width: 1120px;
+    }
+}

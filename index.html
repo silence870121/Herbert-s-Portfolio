@@ -5,15 +5,406 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <meta property="og:title" content="About Herbert | Resume" />
+  <meta property="og:image" content="預覽圖 URL" />
+  <meta property="og:description" content="Herbert's Resume" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>About Herbert | Resume</title>
 </head>
 
 <body>
-  <div id="app">
-    <h1>{{title}}</h1>
-  </div>
-  <script src="https://unpkg.com/vue@next"></script>
+  <header>
+    <div class="container">
+      <div class="header-body">
+        <p>Hello!</p>
+        <h1>I’m <span> Herbert Chung</span></h1>
+        <span class="profession">Front end Developer</span>
+      </div>
+    </div>
+  </header>
+  <!--? Main -->
+  <main>
+    <!--? About -->
+    <section class="container ">
+      <div class="about">
+        <div class="about-body">
+          <div class="headshot"> </div>
+        </div>
+        <div class="about-body">
+          <h2>About Me</h2>
+          <p>我是鍾維哲，畢業於南臺科技大學 視覺傳達系 商業設計組。在2021年6月時決定轉職為前端工程師，目前已累積半年實作經驗。透過數位教育平台與網路資源研究 Bootstrap, JavaScript, Vue.JS,
+            Vue Cli 等技術。</p>
+          <ul class="about-info">
+            <li>
+              <span>Name</span> 鍾維哲
+            </li>
+            <li>
+              <span>Date of birth</span> 1998, 01, 21
+            </li>
+            <li>
+              <span>nationality</span> 臺灣
+            </li>
+            <li>
+              <span>ADDress</span> 彰化縣彰化市崙平里
+            </li>
+            <li>
+              <span>Phone</span> (+886) - 979 - 289 - 628
+            </li>
+            <li>
+              <span>Email</span> silence870121@gmail.com
+            </li>
+          </ul>
+        </div>
+        <div class="about-contact">
+          <h2>Contact</h2>
+          <ul>
+            <li>
+              <img src="./image/icons/bi_github.png" alt="">
+              silence870121.github.io
+            </li>
+            <li>
+              <img src="./image/icons/bi_envelope-fill.png" alt="">
+              silence870121@gmail.com
+            </li>
+            <li>
+              <img src="./image/icons/bi_phone-fill.png" alt="">
+              +886 979-289-628
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--? Skill -->
+    <section>
+      <div class="skill">
+        <h2>Skill & software</h2>
+      </div>
+      <div class="skill bg-surface ">
+        <div class="container">
+          <ul class="skill-list">
+            <li>
+              <h3>HTML & CSS</h3><span>熟悉</span>
+              <div class="skill-progress skill-progress-4"></div>
+              <p>依據設計稿進行網頁切版，製作RWD網頁。</p>
+            </li>
+            <li>
+              <h3>JavaScript</h3><span>中等</span>
+              <div class="skill-progress skill-progress-3"></div>
+              <p>從操作DOM、Event事件處理，到與後端API進行串接。 </p>
+            </li>
+            <li>
+              <h3>Vue.JS</h3><span>中等</span>
+              <div class="skill-progress skill-progress-3"></div>
+              <p>建立Vue開發環境，使用 Options API、Composition API。</p>
+            </li>
+          </ul>
+          <ul class="skill-list">
+            <li>
+              <h3>Figma</h3><span>熟悉</span>
+              <div class="skill-progress  "></div>
+              <p></p>
+            </li>
+            <li>
+              <h3>Visual Studio Code</h3><span>熟悉</span>
+              <div class="skill-progress  "></div>
+              <p></p>
+            </li>
+            <li>
+              <h3>Adobe Series</h3><span>熟悉</span>
+              <div class="skill-progress  "></div>
+              <p></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="skill container">
+
+        <div class="skill-note">
+          <h3>Web Design</h3>
+          <ul>
+            <li> UI設計 / 網頁設計 </li>
+            <li> 網頁版面切版 </li>
+            <li> HTML5、CSS3 </li>
+            <li>Flex Grid System</li>
+            <li>RWD響應式網頁設計</li>
+          </ul>
+        </div>
+        <div class="skill-note skill-note-center">
+          <h3>WEB DEVELOPMENT</h3>
+          <ul>
+            <li>HTML5 & CSS3</li>
+            <li>Bootstrap</li>
+            <li> JavaScript ES5 / ES6+ </li>
+            <li> 串接API（AJAX / Axios / Fetch） </li>
+            <li> Vue.JS （Vue 3） </li>
+            <li>Git Version Control</li>
+          </ul>
+        </div>
+        <div class="skill-note">
+          <h3>Film Edit </h3>
+          <ul>
+            <li> 正片同步及檔案儲存處理 </li>
+            <li> AE/PR剪輯 </li>
+            <li> 字幕製作 </li>
+            <li> 影像輸出 </li>
+            <li> 調光調色 </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <!--? experience -->
+    <section class=" bg-surface">
+      <div class="experience">
+        <h2>experience</h2>
+      </div>
+      <ul class="experience container">
+
+        <li class="experience-item">
+          <p class="experience-time"> Sep.2021 - Oct. 2021 </p>
+          <h3>前端工程開發<span>Hex School 六角學院 | 線上課程</span></h3>
+          <ul>
+            <li class="experience-part">
+              <span> - Vue 3 新手夏令營</span>
+              <p class="experience-detail">
+                在逐漸熟悉 JavaScript 後，我準備開始研究 JavaScript 的框架。在JavaScript三大主流框架中，我選擇研究 Vue.JS 並參與六角學院開設的 Vue 3
+                新手夏令營，以此作為出發點開始研究 Vue.JS。
+              </p>
+              <p class="experience-tags">
+                <span>Vue 3</span>
+                <span>Options API</span>
+                <span>Composition API</span>
+              </p>
+            </li>
+
+            <li class="experience-part">
+              <span> - JS 學徒特訓班</span>
+              <p class="experience-detail">
+                在完成 21 天的 Bootstrap 5 新手實戰營後，我尋找資源開始學習 JavaScript的基礎。研究如何操作DOM、監聽 Event 事件、介接後端 API 以及 ES6+ 的語法。
+              </p>
+              <p class="experience-tags">
+                <span>DOM</span>
+                <span>Event</span>
+                <span>AJAX</span>
+                <span>JavaScript ES6+</span>
+
+              </p>
+            </li>
+
+            <li class="experience-part">
+              <span> - Bootstrap 5 新手實戰營</span>
+              <p class="experience-detail">
+                當我決定步入網頁設計與前端開發的領域卻不知該如何準備時，剛好遇上了六角學院準備開設的21 天 Bootstrap 5 新手實戰營。我便藉由這個機會踏出了第一步，透過課程 複習基本的 HTML &
+                CSS，並研究如何利用 Bootstrap & SCSS 建立客製化 RWD 網頁。
+              </p>
+              <p class="experience-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Bootstrap</span>
+                <span>SCSS</span>
+
+              </p>
+            </li>
+          </ul>
+        </li>
+
+
+        <li class="experience-item">
+          <p class="experience-time"> Sep.2021 - Oct. 2021 </p>
+          <h3 class="experience-title">視覺傳達系 商業設計組<span>南臺科技大學</span></h3>
+
+        </li>
+        <li class="experience-item">
+          <p class="experience-time"> Sep.2021 - Oct. 2021 </p>
+          <h3 class="experience-title">電子科<span>嶺東高中</span></h3>
+          <ul>
+            <li class="experience-part">
+              <p> </p>
+            </li>
+          </ul>
+        </li>
+
+
+      </ul>
+    </section>
+
+    <!--? project -->
+    <section>
+      <div class="project">
+        <h2>PORTFOLIO</h2>
+      </div>
+      <div class="project bg-primary">
+        <ul class="container">
+          <li>
+            <a href="">
+              <h3>
+                RESTful
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                  role="img" width="48" height="48" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                  <g fill="currentColor">
+                    <path
+                      d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z" />
+                    <path
+                      d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z" />
+                  </g>
+                </svg>
+              </h3>
+              <p>
+                JS | AJAX | Vue.JS
+              </p>
+
+            </a>
+            <img src="./image/portfolio/RESTful API Demo.png" alt="">
+          </li>
+          <li>
+            <a href="">
+              <h3>
+                TODO Clock
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                  role="img" width="48" height="48" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                  <g fill="currentColor">
+                    <path
+                      d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z" />
+                    <path
+                      d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z" />
+                  </g>
+                </svg>
+              </h3>
+              <p>
+                JS | Vue.JS
+              </p>
+
+            </a>
+            <img src="./image/portfolio/RESTful API Demo.png" alt="">
+          </li>
+          <li>
+            <a href="">
+              <h3>
+                RESTful
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                  role="img" width="48" height="48" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                  <g fill="currentColor">
+                    <path
+                      d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z" />
+                    <path
+                      d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z" />
+                  </g>
+                </svg>
+              </h3>
+              <p>
+                HTML | CSS | Bootstrap
+              </p>
+
+            </a>
+            <img src="./image/portfolio/RESTful API Demo.png" alt="">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--? autobiography -->
+    <section id="autobiography">
+      <div class="container bg-surface">
+        <div class="autobiography">
+          <h2>autobiography</h2>
+        </div>
+        <div class="autobiography">
+          <input type="checkbox" name="autobiography" id="content">
+          <div class="autobiography-body">
+            <!--* ---------- ---------- content ---------- ---------- -->
+            <!--* ---------- ---------- content ---------- ---------- -->
+            <!--* ---------- ---------- content ---------- ---------- -->
+
+
+            <h3>關於我</h3>
+            <p>我的個性較為獨立，能夠獨自完成工作、解決問題，同時偏好親自操作進行作業。</p>
+            <p>自我要求較高、在乎細節並追求完美，培養了慢工出細活的特質。 </p>
+            <p>有著較高的學習力，能在短時間內學習並掌握必備技能。 </p>
+
+            <h3>個性與特質</h3>
+            <p>我的個性較為獨立，能夠獨自完成工作、解決問題，同時偏好親自操作進行作業。</p>
+            <p>自我要求較高、在乎細節並追求完美，培養了慢工出細活的特質。 </p>
+            <p>有著較高的學習力，能在短時間內學習並掌握必備技能。 </p>
+
+            <h3>學習經歷</h3>
+            <p>
+              大學時基於好奇心而選修了【多媒體程式概論】的網頁設計相關課程，在課程中學習如何透過撰寫HTML與CSS程式碼來進行網頁切板。由於擅長數理邏輯以及高中時曾撰寫過Visual
+              Basic的經驗而能夠迅速理解課程內容並運用，很享受透過撰寫程式碼來呈現視覺的過程以及其成就感並持續學習了相關的課程。在大四的畢業專題中運用自身所學在後期產出的部分製作出單頁式的網頁。
+            </p>
+            <p>
+              畢業後，思考自己的未來發展與自身所長後決定成為前端工程師，透過六角學院提供的資源以及不定期開設的直播課程來學習基礎，並透過實作與網路資源來進行進一步的學習。
+            </p>
+
+            <h3>實務經歷</h3>
+            <span>
+              [ 畢業專題 | Matsu In Taiwan ] - 2019/08 - 2020/05
+            </span>
+            <p>
+              大四與同學小組合作以推廣廟宇文化為題進行為期一年的畢業專題製作，以台南大天后宮為主要對象進行調查與分析，改進廟宇的導覽系統並設計一頁式網頁，在大四完成專題後報名參賽2020 A+文資創意季，入圍2020
+              A+文資創意季-文資創新類。
+            </p>
+
+            <span>
+              [ Side Project ] - 2021/10 - in progress
+            </span>
+            <p>
+              在學習了JavaScript 與 Vue.JS的基礎後，開始準備作品並累積經驗。以挑戰The F2E - 前端修練精神時光屋提供之關卡的方式來累積自己的作品。
+            </p>
+
+            <h3>邁向前端工程師之路</h3>
+            <p>
+              在學期間，雖曾設想於畢業後從事網頁設計與前端開發的工作，但由於瞭解其就業門檻與自身能力的不足而卻步，選擇從事學習已久以致擅長的影像剪輯。然而，畢業後開始求職並經歷了數次的面試後才了解到自身的能力、累積的作品與想從事的職業並不相符，更甚至根本不了解自己到底想做什麼。
+            </p>
+            <p>
+              當一切必須重頭來過的時候，我不禁思考著除了影像剪輯外是否還有其他的選擇時，想起了曾經卻步的網頁設計與前端開發這條路，並開始尋找職缺以及學習資源。當我看著密密麻麻的求職條件、大量的學習資源，正無所適從的時候，發現六角學院正準備舉行一個Bootstrap
+              5的直播課程活動，尚未決定學習途徑的我便試著參加了這個活動，並決定透過六角學院提供的資源開始了一系列的前端課程。
+            </p>
+
+
+            <!--* ---------- ---------- content End ---------- ---------- -->
+            <!--* ---------- ---------- content End ---------- ---------- -->
+            <!--* ---------- ---------- content End ---------- ---------- -->
+          </div>
+          <label class="autobiography-show" for="content">
+            顯示內容 ▼
+          </label>
+          <label class="autobiography-hide" for="content">
+            隱藏內容 ▲
+          </label>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--? Main End -->
+  <footer class="bg-surface">
+    <section class="container">
+      <div class="footer">
+        <h2>CONTACT</h2>
+        <ul class="footer-contact">
+          <li>
+            <a href="https://github.com/silence870121" target="_blank">
+              Github
+            </a>
+            <img src="./image/icons/bi_github.png" alt="">
+          </li>
+          <li>
+            <a href="mailto:silence870121@gmail.com">
+              Email
+            </a>
+            <img src="./image/icons/bi_envelope-fill.png" alt="">
+          </li>
+          <li>
+            <a href="tel:0979289628">
+              Phone
+            </a>
+            <img src="./image/icons/bi_phone-fill.png" alt="">
+          </li>
+        </ul>
+      </div>
+    </section>
+  </footer>
   <script src="./app.js"></script>
 </body>
 
