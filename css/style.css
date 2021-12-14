@@ -97,18 +97,20 @@ header {
     width: 100%;
     background-image: linear-gradient(to right bottom, hsla(0, 0%, 95%, 0.75), hsla(0, 0%, 95%, 0.75)), url(../image/KEY_VISION.png);
     background-size: cover;
-    background-position: bottom;
+    background-position: 25% top;
     overflow-x: hidden;
 }
 
 header .container {
-    height: 90vh;
+    /* height: 90vh; */
+    height: 100vh;
     align-items: center;
 }
 
 .header-body {
-    width: calc(100%/12*7);
-    margin-left: auto;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,35 +120,35 @@ header .container {
 
 .header-body h1 {
     width: 100%;
-    font-size: 4rem;
-    white-space: nowrap;
+    font-size: 2rem;
     margin-left: 0.25rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    white-space: nowrap;
 }
 
 .header-body h1 span {
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 .header-body p {
     width: 100%;
-    font-size: 8rem;
+    font-size: 4rem;
     font-weight: lighter;
 }
 
 .profession {
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     display: flex;
+    align-items: center;
 }
 
 .profession::before {
     flex: 1;
     content: "";
     height: 2px;
-    margin-top: 1rem;
     margin-right: 0.5rem;
     background-color: var(--primary);
 }
@@ -239,13 +241,13 @@ section {
 }
 
 .about-info {
-
     margin: auto;
     margin-top: 3rem;
 }
 
 .about-info li {
     font-size: 1.25rem;
+    font-size: 1rem;
     padding-top: 0.375rem;
     padding-bottom: 0.375rem;
 
@@ -698,7 +700,6 @@ footer section {
 
 .contact li {
     width: calc(100%/6);
-
 }
 
 .contact li a {
@@ -716,9 +717,6 @@ footer section {
     padding-bottom: 0.5rem;
 }
 
-
-
-
 /** Responsive Web Design */
 /*? mobile first */
 @media screen and (min-width: 576px) {
@@ -726,7 +724,9 @@ footer section {
         max-width: 540px;
     }
 
-
+    .about-info li {
+        font-size: 1.25rem;
+    }
 
     .skill-list {
         width: calc(100%/12*6);
@@ -770,6 +770,28 @@ footer section {
 @media screen and (min-width:768px) {
     .container {
         max-width: 720px;
+    }
+
+    header .container {
+        height: 90vh;
+    }
+
+    .header-body {
+        width: calc(100%/12*7);
+        margin: auto;
+        margin-right: 0;
+    }
+
+    .header-body h1, .header-body h1 span {
+        font-size: 3rem;
+    }
+
+    .header-body p {
+        font-size: 6rem;
+    }
+
+    .profession {
+        font-size: 1.25rem;
     }
 
     .about h2 {
