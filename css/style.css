@@ -635,7 +635,7 @@ section {
     bottom: 0;
     right: 0;
     left: 0;
-    background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0) 50%, var(--surface));
+    background-image: linear-gradient(to bottom, hsla(0, 0%, 85%, 0) 50%, hsla(0, 0%, 85%, 1));
     transition: all 500ms ease;
     opacity: 1;
 }
